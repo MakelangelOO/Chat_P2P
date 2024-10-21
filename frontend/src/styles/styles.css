@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0px;
+    background-color: #F6F8FC;
+}
+
+body {
+    font-family: "Agdasima" sans-serif;
+    font-size: 1.1rem;
+}
+.container {
+    display: grid;
+    grid-template: 
+    "rigthBar"
+    "leftbar"
+    "chat";
+    padding: 20px 20px;
+    gap: 20px;
+
+    .left-Bar {
+        grid-area: leftbar;
+    }
+    
+    .chat {
+        grid-area: chat;
+        background-color: #FFFFFF;
+        border-radius: 25px;    
+        height: 650px;
+    }
+
+    .rigth-Bar {
+        grid-area: rigthBar;
+    }
+
+    @media (min-width: 768px) {
+        grid-template: 
+        "rigthBar rigthBar" auto
+        "leftbar leftbar" auto
+        "chat chat" auto/
+        auto auto
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "rigthBar chat" auto
+        "leftbar chat" auto/
+        400px auto
+    }
+}
+
+.form {
+    border-radius: 5px;
+    display:grid;
+    grid-template: 
+    "inputMessage"
+    "button";
+    margin: 0 70px;
+    width: 90%;
+    gap: 5px;
+    background-color: white;
+
+    .inputMessage {
+        grid-area: inputMessage;
+        border-radius: 25px ;
+        background-color: white;
+        border-color: #D5D7D6;
+        border-width: 1px;
+        font-family: "Agdasima" sans-serif;
+        font-size: 1rem;
+        padding: 10px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .button {
+        grid-area: button;
+        padding: 10px;
+        border-radius: 25px;
+        border-width: 1px;
+        border-color: #D5D7D6;
+        color: #0B57D0;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .button:hover {
+        background-color: #0B57D0;
+        color: white;
+        font-weight: bold;
+    }
+
+    .button:disabled {
+        background-color: #D3D3D3;
+        color: #A0A0A0;
+        border-color: #B0B0B0;
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+    .inputMessage:disabled {
+        background-color: #E0E0E0;
+        color: #A0A0A0;
+        border-color: #C0C0C0;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    @media (min-width: 768px) {
+        grid-template: 
+        "inputMessage button"/
+        80% 100px
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "inputMessage button"/
+        80% 100px
+    }
+}
+
+.textTitle {
+    background-color: white;
+    padding: 10px 40px;
+    width: fit-content;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.chatMessagesContainer {
+    background-color: white;
+    margin: 10px;
+    height: 450px;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+.chatMessagesContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chatMessagesContainer::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatMessagesContainer::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.chatMessagesContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.message {
+    background-color: #F2F2F2;
+    margin: 5px 70px;
+    border-radius: 10px 25px;
+    padding: 10px;
+}
+
+.message-own {
+    background-color: #ECF3FE;
+    margin: 5px 70px;
+    border-radius: 10px 25px;
+    padding: 10px;
+}
+
+.myContainerMessage {
+    justify-self: end;
+    background-color: white;
+    width: fit-content;
+}
+
+.containerMessage {
+    background-color: white;
+    width: fit-content;
+
+}
+
+.messageText {
+    background-color: #F2F2F2;
+}
+
+.messageText-own {
+    background-color: #ECF3FE;
+}
+
+.pName {
+    background-color: white;
+    margin: 0 70px;
+    font-size: 0.9rem;
+}
+
+.containerTextExample  h4{
+    background-color: #18212e98 !important;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: monospace;
+    padding: 10px;
+}
+
+ul {
+    padding-left: 20px; 
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    list-style-position: inside;
+    font-size: 1rem;
+    color: #333;
+}
+
+.imputName {
+    border-radius: 25px ;
+        background-color: white;
+        border-color: #D5D7D6;
+        border-width: 1px;
+        font-family: "Agdasima" sans-serif;
+        font-size: 1rem;
+        padding: 10px;
+        margin: auto;
+        width: 100%;
+}
