@@ -143,7 +143,6 @@ For this project it's need necessary to consider these points:
 
 1. For start process considere the next steps:
     - execute the command in the Fronted setup section
-    - create an .env file in the root directory with an VITE_CHAT_AND_CONVERTION_API_SERVER varibla that contain the  API URL of the server
     - The project has been created with Vite in NodeJS, so if you clone the repository and use the frontend you must run it in nodeJS to avoid configuration errors with the environment that allows you to run the project.
 
 
