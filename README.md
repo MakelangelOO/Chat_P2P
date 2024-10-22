@@ -84,7 +84,7 @@ when the application is running you can use any type of method preferred by you 
 
     **Request Example with CURL:**
     ```bash
-    curl -x GET "http://localhost:3000/rates"
+    curl -x GET "http://localhost:3000/api/rates"
     ```
 
 - **endpoint** `Convert Currencies`
@@ -100,7 +100,7 @@ when the application is running you can use any type of method preferred by you 
 
     **Request Example with CURL:**
     ```bash
-    curl -x POST "http://localhost:3000/conversion" \
+    curl -x POST "http://localhost:3000/api/conversion" \
     -H "Content-Type: application/json" \
     -d '{"amount": "150", "fromCurrency": "USD","toCurrency": "COP"}'
     ```
